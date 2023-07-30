@@ -37,6 +37,7 @@ model Account {
   Platform    Platform?        @relation(fields: [platformId], references: [id])
   User        User             @relation(fields: [userId], references: [id])
   Order       Order[]
+  ownerName   String?
 
   @@id([id, userId])
 }
@@ -201,6 +202,7 @@ enum AccountType {
 
 enum AssetClass {
   CASH
+  CASH SAVINGS
   COMMODITY
   EQUITY
   FIXED_INCOME
@@ -252,6 +254,7 @@ enum Type {
   ITEM
   LIABILITY
   SELL
+  TRANSFER
 }
 
 enum ViewMode {
