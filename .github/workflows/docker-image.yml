@@ -19,7 +19,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: studavidson123/${{ github.repository }}
+          images: studavidson123/sd_ghostfolio
           tags: |
             type=semver,pattern={{version}}
 
