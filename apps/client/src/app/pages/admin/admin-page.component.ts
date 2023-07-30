@@ -32,8 +32,8 @@ export class AdminPageComponent implements OnDestroy, OnInit {
         path: ['/admin']
       },
       {
-        iconName: 'settings-outline',
-        label: $localize`Settings`,
+        iconName: 'apps-sharp',
+        label: $localize`Platforms`,
         path: ['/admin', 'settings']
       },
       {
