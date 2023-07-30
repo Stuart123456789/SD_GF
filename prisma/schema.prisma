@@ -202,7 +202,7 @@ enum AccountType {
 
 enum AssetClass {
   CASH
-  CASH SAVINGS
+  CASH_SAVINGS
   COMMODITY
   EQUITY
   FIXED_INCOME
