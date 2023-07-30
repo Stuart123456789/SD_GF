@@ -206,23 +206,6 @@
       ></gf-value>
     </td>
   </ng-container>
-
-  <ng-container matColumnDef="accountOwner">
-    <th
-      *matHeaderCellDef
-      class="d-none d-lg-table-cell px-1"
-      mat-header-cell
-      mat-sort-header
-    >
-      <ng-container i18n>Account Owner</ng-container>
-    </th>
-    <td *matCellDef="let element" class="d-none d-lg-table-cell px-1" mat-cell>
-      {{ element.accountOwner }}
-    </td>
-    <td *matFooterCellDef class="d-none d-lg-table-cell px-1" mat-footer-cell>
-      {{ accountOwner }}
-    </td>
-  </ng-container>
   
   <ng-container matColumnDef="comment">
     <th
