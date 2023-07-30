@@ -37,5 +37,15 @@ services:
       timeout: 5s
       retries: 5
 
+  pgadmin:
+    container_name: ghostfolio-pgadmin
+    image: dpage/pgadmin4
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: stu_davidson@hotmail.co.uk
+      PGADMIN_DEFAULT_PASSWORD: PASSWORD
+    ports:
+      - "5050:80"
+
 volumes:
   postgres:
