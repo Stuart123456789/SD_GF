@@ -896,7 +896,7 @@ export class PortfolioCalculator {
         }
       }
       if (!invalid) {
-        const grossPerformance = value.minus(investment);
+        const grossPerformance = value.minus(investment).plus(dividend);
         const netPerformance = grossPerformance.minus(fees);
         if (
           minNetPerformance === null ||
